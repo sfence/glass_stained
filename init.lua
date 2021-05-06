@@ -266,9 +266,9 @@ xpanes.register_pane("bar_top", {
 	groups = {cracky = 2},
 	sounds = hades_sounds.node_sound_metal_defaults(),
 	recipe = {
-		{"", "default:steel_ingot", ""},
-		{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
-		{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"}
+		{"", "hades_core:steel_ingot", ""},
+		{"hades_core:steel_ingot", "hades_core:steel_ingot", "hades_core:steel_ingot"},
+		{"hades_core:steel_ingot", "hades_core:steel_ingot", "hades_core:steel_ingot"}
 	}
 })
 
@@ -280,8 +280,8 @@ xpanes.register_pane("pane", {
 	sounds = hades_sounds.node_sound_glass_defaults(),
 	groups = {snappy = 2, cracky = 3, oddly_breakable_by_hand = 3},
 	recipe = {
-		{"default:glass", "default:glass", "default:glass"},
-		{"default:glass", "default:glass", "default:glass"}
+		{"hades_core:glass", "hades_core:glass", "hades_core:glass"},
+		{"hades_core:glass", "hades_core:glass", "hades_core:glass"}
 	}
 })
 
@@ -293,8 +293,8 @@ xpanes.register_pane("obsidian_pane", {
 	sounds = hades_sounds.node_sound_glass_defaults(),
 	groups = {snappy = 2, cracky = 3},
 	recipe = {
-		{"default:obsidian_glass", "default:obsidian_glass", "default:obsidian_glass"},
-		{"default:obsidian_glass", "default:obsidian_glass", "default:obsidian_glass"}
+		{"hades_core:obsidian_glass", "hades_core:obsidian_glass", "hades_core:obsidian_glass"},
+		{"hades_core:obsidian_glass", "hades_core:obsidian_glass", "hades_core:obsidian_glass"}
 	}
 })
 
