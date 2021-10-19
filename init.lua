@@ -191,7 +191,7 @@ for name, selection_box in pairs(selection_boxes) do
 			drawtype = "nodebox",
 			tiles = {"glass_stained_"..node..".png"},
 			wield_image = "glass_stained_"..node..".png",
-			use_texture_alpha = "opaque",
+			use_texture_alpha = "blend",
 			paramtype = "light",
 			paramtype2 = "facedir",
 			sunlight_propagates = true,
