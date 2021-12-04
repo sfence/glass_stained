@@ -202,7 +202,8 @@ for name, selection_box in pairs(selection_boxes) do
 			},
 			selection_box = {
 				type = "fixed",
-				fixed = selection_box,
+				--fixed = selection_box,
+				fixed = nodeboxes[name],
 			},
 			groups = {cracky = 3, oddly_breakable_by_hand = 3},
 			sounds = hades_sounds.node_sound_glass_defaults()
@@ -228,7 +229,7 @@ for name, selection_box in pairs(selection_boxes) do
 			drawtype = "nodebox",
 			tiles = {pane[4], pane[4], pane[3]},
 			wield_image = pane[3],
-			use_texture_alpha = "opaque",
+			use_texture_alpha = "clip",
 			paramtype = "light",
 			paramtype2 = "facedir",
 			sunlight_propagates = true,
@@ -239,7 +240,8 @@ for name, selection_box in pairs(selection_boxes) do
 			},
 			selection_box = {
 				type = "fixed",
-				fixed = selection_box,
+				--fixed = selection_box,
+				fixed = thick_nodeboxes[name],
 			},
 			groups = {cracky = 3, oddly_breakable_by_hand = 3},
 			sounds = pane[5]
@@ -318,7 +320,8 @@ minetest.register_node("hades_glass_stained:pane_bar_top_pane_single", {
 	},
 	selection_box = {
 		type = "fixed",
-		fixed = selection_boxes["single"],
+		--fixed = selection_boxes["single"],
+		fixed = thick_nodeboxes["single"],
 	},
 	groups = {cracky = 3, oddly_breakable_by_hand = 3},
 	sounds = hades_sounds.node_sound_metal_defaults(),
@@ -340,7 +343,8 @@ minetest.register_node("hades_glass_stained:pane_bar_top_pane_offset", {
 	},
 	selection_box = {
 		type = "fixed",
-		fixed = selection_boxes["offset"],
+		--fixed = selection_boxes["offset"],
+		fixed = thick_nodeboxes["offset"],
 	},
 	groups = {cracky = 3, oddly_breakable_by_hand = 3},
 	sounds = hades_sounds.node_sound_metal_defaults(),
