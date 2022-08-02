@@ -211,9 +211,9 @@ for name, selection_box in pairs(selection_boxes) do
 		
 		if name == "noncuple" then
 			define_crafts("hades_glass_stained:glass_"..node, {
-				{"dye:"..crafting[node][1], "hades_xpanes:pane_flat"},
-				{"dye:"..crafting[node][2], "hades_xpanes:pane_flat"},
-				{"dye:"..crafting[node][3], "hades_xpanes:pane_flat"}
+				{"hades_dye:"..crafting[node][1], "hades_xpanes:pane_flat"},
+				{"hades_dye:"..crafting[node][2], "hades_xpanes:pane_flat"},
+				{"hades_dye:"..crafting[node][3], "hades_xpanes:pane_flat"}
 			}, "3")
 		end
 		
